@@ -7,13 +7,11 @@ namespace Linked_List
     class LinkListOperation
     {
         public Node head;
-        public void insert(int value)
+        public void append(int value)
         {
-
             Node newNode = new Node();
             newNode.data = value;
             newNode.next = null;
-
             if (head != null)
             {
                 Node temp = head;
@@ -30,7 +28,7 @@ namespace Linked_List
             }
         }
 
-        public void Add(int value)
+        public void add(int value)
         {
             Node newNode = new Node();
             newNode.data = value;
@@ -53,7 +51,6 @@ namespace Linked_List
                 {
                     Console.WriteLine(temp.data);
                     temp = temp.next;
-
                 }
                 Console.WriteLine(temp.data);
             }
