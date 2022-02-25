@@ -8,5 +8,6 @@ namespace Linked_List
     {
         public int data;
         public Node next;
+        
     }
 }
