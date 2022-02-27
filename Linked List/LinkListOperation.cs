@@ -92,6 +92,8 @@ namespace Linked_List
             }
             return head;
         }
+
+        // Removes the first node from list
         public Node removeFirstNode()
         {
             if (this.head == null)
@@ -99,6 +101,23 @@ namespace Linked_List
             Node temp = head;
             head = head.next;
             return temp;
+        }
+
+        // Removes the last node from list
+        public Node removeLastNode()
+        {
+            if (head == null)
+                return null;
+            if (head.next == null)
+                return null;
+            Node newNode = head;
+            while (newNode.next.next != null)
+            {
+                newNode = newNode.next;
+            }
+            Node lastElement = newNode.next;
+            newNode.next = null;
+            return lastElement;
         }
     }
 }
