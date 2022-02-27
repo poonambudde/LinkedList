@@ -32,6 +32,9 @@ namespace Linked_List
             linkistOperation.Display();
             Console.WriteLine("Last element is poped out from linked list = " + linkistOperation.removeLastNode().data);
             linkistOperation.Display();
+            Console.WriteLine("Serach elment");
+            linkistOperation.Search(30);
+            linkistOperation.Display();
         }
     }
 }
