@@ -9,7 +9,7 @@ namespace Linked_List
         public int data;
         public Node next;
 
-        // Parameterized constructor to Initializes a new instance of the class
+        // Parameterized constructor to Initializes a new instance of the class.
         public Node(int data)
         {
             this.data = data;
