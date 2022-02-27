@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -29,7 +29,7 @@ namespace Linked_List
             }
             Console.WriteLine("inserted into the linked list", node.data);
         }
-
+        
         // Add2 methode to add the specified data into linked list
         public void Add2(int data)
         {
