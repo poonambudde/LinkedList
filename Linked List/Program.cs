@@ -26,6 +26,8 @@ namespace Linked_List
             Console.WriteLine("\n");
             linkistOperation.InsertAtParticularPoistion(2, 30);
             linkistOperation.Display();
+            Console.WriteLine("First element is poped out from linked list = " + linkistOperation.removeFirstNode().data);
+            linkistOperation.Display();
         }
     }
 }
