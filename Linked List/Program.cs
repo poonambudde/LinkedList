@@ -34,7 +34,6 @@ namespace Linked_List
             Console.WriteLine("Serach elment");
             linklistOperation.Search(30);
             linklistOperation.Display();
-            
         }
     }
 }
