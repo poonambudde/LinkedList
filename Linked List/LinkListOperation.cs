@@ -9,8 +9,6 @@ namespace Linked_List
     class LinkListOperation
     {
         internal Node head;
-
-        // Add methode to add the specific data into linked list
         public void Add(int data)
         {
             Node node = new Node(data);
@@ -29,8 +27,6 @@ namespace Linked_List
             }
             Console.WriteLine("inserted into the linked list", node.data);
         }
-        
-        // Add2 methode to add the specified data into linked list
         public void Add2(int data)
         {
             Node node = new Node(data);
@@ -45,8 +41,6 @@ namespace Linked_List
             }
             Console.WriteLine("inserted into the linked list", node.data);
         }
-
-        // Display methode for display the specific data
         public void Display()
         {
             Node temp = this.head;
@@ -62,8 +56,6 @@ namespace Linked_List
             }
             Console.WriteLine();
         }
-
-        // Inserts at particular poistion i,e 2
         public Node InsertAtParticularPoistion(int poistion, int data)
         {
             if (poistion < 1)
@@ -92,8 +84,6 @@ namespace Linked_List
             }
             return head;
         }
-
-        // Removes the first node from list
         public Node removeFirstNode()
         {
             if (this.head == null)
@@ -102,8 +92,6 @@ namespace Linked_List
             head = head.next;
             return temp;
         }
-
-        // Removes the last node from list
         public Node removeLastNode()
         {
             if (head == null)
@@ -119,8 +107,6 @@ namespace Linked_List
             newNode.next = null;
             return lastElement;
         }
-
-        // Searches the specified node with value
         public Node Search(int value)
         {
             while (this.head != null)
@@ -132,6 +118,20 @@ namespace Linked_List
                 this.head = this.head.next;
             }
             return null;
+        }
+        public int findPoistion(int value)
+        {
+            int position = 0;
+            while (this.head != null)
+            {
+                position++;
+                if (this.head.data == value)
+                {
+                    return position;
+                }
+                this.head = this.head.next;
+            }
+            return position;
         }
     }
 }
