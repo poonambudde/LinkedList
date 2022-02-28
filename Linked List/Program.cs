@@ -31,9 +31,12 @@ namespace Linked_List
             linklistOperation.Display();
             Console.WriteLine("Last element is poped out from linked list = " + linklistOperation.removeLastNode().data);
             linklistOperation.Display();
-            Console.WriteLine("Serach elment");
-            linklistOperation.Search(30);
-            linklistOperation.Display();
+            SortedLinkedList sortedLinkedList = new SortedLinkedList();
+            sortedLinkedList.Add(56);
+            sortedLinkedList.Add(30);
+            sortedLinkedList.Add(40);
+            sortedLinkedList.Add(70);
+            sortedLinkedList.Display();
         }
     }
 }
