@@ -37,7 +37,6 @@ namespace Linked_List
             sortedLinkedList.Add(40);
             sortedLinkedList.Add(70);
             sortedLinkedList.Display();
-            
         }
     }
 }
